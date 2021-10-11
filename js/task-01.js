@@ -1,6 +1,6 @@
-const elRefs = {
+const refs = {
   categories: document.querySelector("#categories"),
-  item: document.querySelector(".item"),
+  item: document.querySelectorAll(".item"),
 };
 
 function countCategories(element) {
@@ -15,4 +15,4 @@ function itemCount(element) {
 }
 
 countCategories(refs.categories);
-item(elRefs.item);
+itemCount(refs.item);
